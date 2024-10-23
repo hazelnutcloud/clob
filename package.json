@@ -1,0 +1,9 @@
+{
+	"name": "rise-clob",
+	"private": true,
+  "scripts": {
+    "nats:start": "bun --filter backend nats:start",
+    "nats:stop": "bun --filter backend nats:stop"
+  },
+	"workspaces": ["frontend", "backend"]
+}

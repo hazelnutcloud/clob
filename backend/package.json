@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "module": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "nats:start": "docker start nats-server || docker run -p 4222:4222 -p 8222:8222 -p 6222:6222 --name nats-server -d nats:latest",
+    "nats:stop": "docker stop nats-server"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "data-structure-typed": "^1.52.4",
+    "nats": "^2.28.2"
+  }
+}
